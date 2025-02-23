@@ -6,6 +6,7 @@ const companyRoutes = require('./routes/companyRoutes');
 const userRoutes = require('./routes/userRoutes');
 const searchRoutes = require('./routes/searchRoutes');
 
+
 dotenv.config();
 const app = express();
 app.use(cors());
