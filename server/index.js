@@ -17,7 +17,7 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log(err));
 
 // Routes
-app.length('/', (req, res) => res.send('Welcome to the API'));
+app.get('/', (req, res) => res.send('Welcome to the API'));
 app.use('/api/companies', companyRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/search', searchRoutes);
